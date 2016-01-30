@@ -14,8 +14,43 @@
     tools:showIn="@layout/activity_main"
     tools:context="com.example.cosorio.myampapplication.MainActivity">
 
-    <TextView
-        android:text="Hello World!"
+    <SeekBar
+        android:layout_width="150dp"
+        android:layout_height="20dp"
+        android:id="@+id/seekBar"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp" />
+
+    <RatingBar
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:id="@+id/ratingBar"
+        android:layout_below="@+id/seekBar2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="66dp"
+        android:indeterminateOnly="false"
+        android:focusableInTouchMode="false"
+        android:focusable="false" />
+
+    <SeekBar
+        android:layout_width="150dp"
+        android:layout_height="20dp"
+        android:id="@+id/seekBar2"
+        android:layout_marginTop="136dp"
+        android:maxHeight="20dp"
+        android:maxWidth="150dp"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/textView"
+        android:layout_marginTop="81dp"
+        android:layout_below="@+id/seekBar"
+        android:layout_centerHorizontal="true" />
+
 </RelativeLayout>
